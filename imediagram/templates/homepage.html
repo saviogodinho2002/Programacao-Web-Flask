@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+
+        {% block titulo %}
+        Homepage
+        {% endblock %}
+
+    </title>
+</head>
+<body>
+
+    {% block body %}
+    <h1 style="color: #ff0000">Rota principal</h1>
+    <p>Este conteúdo está em templates/homepage.html</p>
+    <p>Carregado via main.py, usando o decorator @app.route('/')</p>
+    {% endblock %}
+
+</body>
+</html>
